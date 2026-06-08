@@ -1,0 +1,30 @@
+{
+  "reports": [
+    {
+      "id": "CF-2601",
+      "location": "Abakpa Nike",
+      "category": "Blocked drainage",
+      "severity": "High",
+      "status": "Open",
+      "lat": 6.472,
+      "lng": 7.548
+    },
+    {
+      "id": "CF-2602",
+      "location": "Nsukka",
+      "category": "Broken borehole",
+      "severity": "Medium",
+      "status": "In Progress",
+      "lat": 6.856,
+      "lng": 7.392
+    }
+  ],
+  "waterData": [
+    { "asset": "Ogui pipeline", "ph": 6.4, "turbidity": 58, "leakRisk": 63 },
+    { "asset": "Udi water station", "ph": 7.2, "turbidity": 22, "leakRisk": 28 }
+  ],
+  "sanitationData": [
+    { "asset": "Abakpa drainage", "blockage": 82, "floodRisk": 76 },
+    { "asset": "Agbani waste hotspot", "blockage": 48, "floodRisk": 41 }
+  ]
+}

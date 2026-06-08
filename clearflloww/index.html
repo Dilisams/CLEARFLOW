@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ClearFlow Enugu is a smart water and sanitation intelligence platform for sustainable communities in Enugu State.">
+  <title>ClearFlow Enugu | Smart Water & Sanitation Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;650;750;850;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js" defer></script>
+  <script src="assets/js/firebase-config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="ClearFlow Enugu home"><span class="brand-mark">CF</span><span>ClearFlow Enugu<small>World Water Day 2026 Innovation Challenge</small></span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="problem.html">Problem</a><a href="solution.html">Solution</a><a href="dashboard.html">Dashboard</a><a href="map.html">GIS Map</a><a href="report.html">Report</a><a href="impact.html">Impact</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions"><button class="icon-btn theme-toggle" aria-label="Switch theme"><i data-lucide="moon"></i></button><button class="menu-btn" aria-label="Open menu"><i data-lucide="menu"></i></button></div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow"><i data-lucide="droplets"></i> ClearFlow Enugu</span>
+          <h1>Transforming Water & Sanitation in Enugu Through Smart Technology</h1>
+          <p class="lead">Smart Water & Sanitation Intelligence for Sustainable Communities. A civic-tech command layer for boreholes, pipelines, drainage, waste hotspots, public hygiene, and disease-risk response.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="dashboard.html"><i data-lucide="layout-dashboard"></i>Explore Dashboard</a>
+            <a class="btn green" href="report.html"><i data-lucide="send"></i>Report an Issue</a>
+            <a class="btn" href="solution.html"><i data-lucide="route"></i>Learn More</a>
+            <a class="btn ghost" href="contact.html"><i data-lucide="handshake"></i>Partner With Us</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="ClearFlow smart water and sanitation monitoring visual">
+          <div class="floating-card top">
+            <strong>Live WASH Command Signal</strong>
+            <p>Water quality, leakage, flood and sanitation alerts prioritized for response teams.</p>
+            <div class="signal-row" aria-hidden="true"><span style="height:48%"></span><span style="height:72%"></span><span style="height:38%"></span><span style="height:84%"></span><span style="height:58%"></span></div>
+          </div>
+          <div class="floating-card bottom">
+            <strong>AI Priority Queue</strong>
+            <p>Critical dirty-water and drainage reports are escalated for government action first.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid cols-4">
+        <div class="metric"><strong class="counter" data-target="214">0</strong><span>Water assets mapped</span></div>
+        <div class="metric"><strong class="counter" data-target="86" data-suffix="%">0</strong><span>High-risk cases triaged</span></div>
+        <div class="metric"><strong class="counter" data-target="32">0</strong><span>Drainage hotspots flagged</span></div>
+        <div class="metric"><strong class="counter" data-target="17">0</strong><span>LGAs ready to scale</span></div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">Integrated civic intelligence</span><h2>One platform for water access and sanitation response.</h2></div>
+          <p>ClearFlow combines sensor-style monitoring, citizen reports, GIS visibility, AI risk scoring, and admin workflows into a deployable Enugu WASH operations platform.</p>
+        </div>
+        <div class="grid cols-3">
+          <article class="card"><div class="card-icon"><i data-lucide="activity"></i></div><h3>Smart Water Monitoring</h3><p>Track pH, turbidity, supply status, pressure drops, borehole uptime, contamination risk, and leakage probability.</p></article>
+          <article class="card green"><div class="card-icon"><i data-lucide="recycle"></i></div><h3>Sanitation Intelligence</h3><p>Monitor drainage blockages, sewage overflow, illegal dumping, flood-risk corridors, and public hygiene patterns.</p></article>
+          <article class="card"><div class="card-icon"><i data-lucide="map"></i></div><h3>GIS Response Layer</h3><p>Map boreholes, pipelines, waste hotspots, drainage issues, sewage reports, and flood-risk zones across Enugu.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid cols-2">
+        <div class="panel chart-card"><h3>Dashboard Preview</h3><canvas id="usageChart"></canvas></div>
+        <div class="panel chart-card"><h3>Complaint Analytics</h3><canvas id="complaintChart"></canvas></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-grid"><div><h3>ClearFlow Enugu</h3><p>Smart Water & Sanitation Intelligence for Sustainable Communities.</p></div><div><strong>Platform</strong><a href="dashboard.html">Dashboard</a><a href="map.html">GIS Map</a><a href="report.html">Reporting</a></div><div><strong>Challenge</strong><a href="problem.html">Problem</a><a href="solution.html">Solution</a><a href="impact.html">Impact</a></div><div><strong>Contact</strong><a href="contact.html">Partnerships</a><a href="team.html">Team</a></div></div></footer>
+  <script>window.addEventListener("DOMContentLoaded",()=>lucide?.createIcons());</script>
+</body>
+</html>
